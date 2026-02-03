@@ -29,7 +29,7 @@ export function ConfigurationForm({ onSubmit, loading = false }: ConfigurationFo
     }
   })
 
-  const [appConfig, setAppConfig] = useState<ConfigData | null>(null)
+  const [appConfig, setAppConfig] = useState<any>(null)
   const [templates, setTemplates] = useState<TemplateConfig | null>(null)
 
   useEffect(() => {
