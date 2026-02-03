@@ -1,0 +1,153 @@
+# SaaS SEO Article Generator Configuration
+# Example configuration for SaaS/software companies
+
+brand:
+  name: "CloudFlow"
+  website: "https://cloudflow.io"
+  logo_url: "https://cloudflow.io/logo.png"
+  tagline: "Streamline Your Workflow"
+
+seo:
+  min_word_count: 1200
+  max_word_count: 3000
+  keyword_density: 0.02
+  meta_description_length: 155
+
+generation:
+  default_count: 50
+  max_parallel_workers: 4
+  output_dir: "saas_articles"
+
+template_distribution:
+  listicle: 0.25
+  how_to: 0.35         # How-to content is key for SaaS
+  comparison: 0.20     # VS competitor articles
+  ultimate_guide: 0.15
+  developer_focused: 0.05
+
+variable_pools:
+  products:
+    - "project management software"
+    - "team collaboration platform"
+    - "task automation tool"
+    - "workflow management system"
+    - "cloud productivity suite"
+    - "business process automation"
+    - "team communication app"
+    - "document management system"
+
+  competitors:
+    - "Asana"
+    - "Monday.com"
+    - "Trello"
+    - "Slack"
+    - "Notion"
+    - "ClickUp"
+    - "Basecamp"
+    - "Jira"
+    - "Microsoft Teams"
+
+  use_cases:
+    - "remote team management"
+    - "project tracking"
+    - "client collaboration"
+    - "agile development"
+    - "resource planning"
+    - "task delegation"
+    - "deadline management"
+    - "team communication"
+    - "document sharing"
+    - "workflow automation"
+
+  audiences:
+    - "project managers"
+    - "startup founders"
+    - "remote teams"
+    - "agencies"
+    - "enterprises"
+    - "freelancers"
+    - "consultants"
+    - "developers"
+    - "marketing teams"
+    - "HR departments"
+
+  problems:
+    - "scattered communication"
+    - "missed deadlines"
+    - "poor visibility"
+    - "manual processes"
+    - "data silos"
+    - "inefficient workflows"
+    - "lack of automation"
+    - "complex onboarding"
+
+  goals:
+    - "increase productivity"
+    - "improve collaboration"
+    - "automate workflows"
+    - "reduce manual work"
+    - "track progress"
+    - "meet deadlines"
+    - "scale operations"
+    - "enhance visibility"
+
+  benefits:
+    - "real-time collaboration"
+    - "automated workflows"
+    - "intuitive interface"
+    - "seamless integrations"
+    - "advanced analytics"
+    - "mobile accessibility"
+    - "enterprise security"
+    - "24/7 support"
+
+  actions:
+    - "set up automated workflows"
+    - "manage remote teams"
+    - "track project progress"
+    - "integrate tools"
+    - "customize dashboards"
+    - "generate reports"
+    - "collaborate on documents"
+
+  topics:
+    - "Project Management"
+    - "Team Collaboration"
+    - "Workflow Automation"
+    - "Remote Work"
+    - "Business Productivity"
+    - "Digital Transformation"
+    - "Agile Methodology"
+
+  dev_languages:
+    - "JavaScript"
+    - "Python"
+    - "TypeScript"
+    - "React"
+    - "Node.js"
+    - "REST API"
+    - "GraphQL"
+
+  dev_features:
+    - "API integration"
+    - "webhook implementation"
+    - "OAuth authentication"
+    - "real-time sync"
+    - "data migration"
+    - "custom plugins"
+    - "SDK usage"
+
+content_blocks:
+  conclusions:
+    - "Transform your {use_case} with the right {product}. Start your free trial today and experience the difference."
+    - "Don't let {problem} slow down your team. Modern {product} solutions make {achieve_goal} easier than ever."
+    - "Whether you're a {audience} or managing a large enterprise, the right tools can revolutionize your workflow."
+
+  takeaways:
+    - "Start with a free trial to test features"
+    - "Integrate with your existing tools"
+    - "Train your team properly"
+    - "Use automation to save time"
+    - "Monitor analytics for insights"
+    - "Customize to your workflow"
+    - "Take advantage of support resources"

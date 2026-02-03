@@ -1,0 +1,152 @@
+# E-commerce SEO Article Generator Configuration
+# Example configuration for online retail/e-commerce sites
+
+brand:
+  name: "ShopHub"
+  website: "https://shophub.example.com"
+  logo_url: "https://shophub.example.com/logo.png"
+  tagline: "Your One-Stop Shopping Destination"
+
+seo:
+  min_word_count: 1000
+  max_word_count: 2500
+  keyword_density: 0.025  # 2.5%
+  meta_description_length: 160
+
+generation:
+  default_count: 100
+  max_parallel_workers: 6
+  output_dir: "ecommerce_articles"
+
+template_distribution:
+  listicle: 0.35         # Product roundups are popular
+  how_to: 0.20           # How to choose/use products
+  comparison: 0.25       # Product comparisons drive sales
+  ultimate_guide: 0.15   # Buying guides
+  location_based: 0.05   # Local shopping guides
+
+variable_pools:
+  products:
+    - "wireless headphones"
+    - "smart watches"
+    - "fitness trackers"
+    - "bluetooth speakers"
+    - "phone cases"
+    - "laptop bags"
+    - "power banks"
+    - "webcams"
+    - "mechanical keyboards"
+    - "gaming mice"
+
+  competitors:
+    - "Amazon"
+    - "Best Buy"
+    - "Target"
+    - "Walmart"
+    - "eBay"
+    - "Newegg"
+    - "B&H Photo"
+
+  use_cases:
+    - "home office setup"
+    - "remote work"
+    - "gaming"
+    - "content creation"
+    - "travel"
+    - "fitness tracking"
+    - "music listening"
+    - "video calls"
+    - "productivity"
+    - "entertainment"
+
+  audiences:
+    - "tech enthusiasts"
+    - "remote workers"
+    - "gamers"
+    - "students"
+    - "professionals"
+    - "travelers"
+    - "fitness enthusiasts"
+    - "audiophiles"
+    - "content creators"
+    - "budget shoppers"
+
+  problems:
+    - "high prices"
+    - "poor quality"
+    - "limited selection"
+    - "slow shipping"
+    - "complicated returns"
+    - "lack of warranty"
+    - "counterfeit products"
+    - "confusing specs"
+
+  goals:
+    - "find the best deals"
+    - "compare products effectively"
+    - "make informed purchases"
+    - "save money"
+    - "get quality products"
+    - "shop efficiently"
+    - "avoid buyer's remorse"
+    - "find perfect gifts"
+
+  benefits:
+    - "free shipping"
+    - "30-day returns"
+    - "price match guarantee"
+    - "expert reviews"
+    - "detailed comparisons"
+    - "exclusive discounts"
+    - "warranty included"
+    - "fast delivery"
+
+  actions:
+    - "choose the right product"
+    - "compare prices"
+    - "find discounts"
+    - "read reviews"
+    - "check specifications"
+    - "track orders"
+    - "return products"
+
+  topics:
+    - "Smart Shopping"
+    - "Product Reviews"
+    - "Buying Guides"
+    - "Tech Accessories"
+    - "Home Electronics"
+    - "Gaming Gear"
+    - "Office Equipment"
+
+  locations:
+    - "New York"
+    - "Los Angeles"
+    - "Chicago"
+    - "Houston"
+    - "Phoenix"
+    - "Philadelphia"
+    - "San Antonio"
+    - "San Diego"
+    - "Dallas"
+    - "San Jose"
+
+  services:
+    - "Electronics Shopping"
+    - "Tech Product Delivery"
+    - "Gadget Retail"
+
+content_blocks:
+  conclusions:
+    - "With these insights, finding the perfect {product} for your {use_case} becomes much easier. Shop smart and save big!"
+    - "Whether you're a {audience} or just looking for quality {product}, these options deliver exceptional value."
+    - "Don't let {problem} hold you back from getting the {product} you need. Start shopping smarter today!"
+
+  takeaways:
+    - "Compare prices across multiple retailers"
+    - "Read verified customer reviews"
+    - "Check warranty and return policies"
+    - "Look for seasonal discounts"
+    - "Consider refurbished options for savings"
+    - "Use price tracking tools"
+    - "Sign up for deal alerts"

@@ -1,0 +1,111 @@
+# Article Template Patterns
+# Define title and intro patterns for each template type
+
+listicle:
+  title_patterns:
+    - "{number} Best {product} for {use_case} in {year}"
+    - "{number} Ways to {achieve_goal} in {year}"
+    - "Top {number} {product} Alternatives for {use_case}"
+    - "{number} {product} Apps That Actually Work ({year})"
+    - "The {number} Most Secure {product} ({year} Edition)"
+    - "{number} Essential {product} Features for {audience}"
+    - "Top {number} Reasons to Choose {product} in {year}"
+
+  intro_patterns:
+    - "Looking for {product} that actually delivers on its promises? We tested {number} different solutions to find the best options for {use_case}."
+    - "In {year}, {achieve_goal} has become more important than ever. Here are {number} proven methods that actually work."
+    - "After extensive testing, we've identified the {number} best {product} for {use_case}. Each option offers unique benefits for different needs."
+    - "Discover the {number} most effective ways to {achieve_goal} without {problem}. These solutions have been tested and proven to deliver results."
+
+how_to:
+  title_patterns:
+    - "How to {action} Without {problem} ({year} Guide)"
+    - "How to {action} in {number} Simple Steps"
+    - "How to {action}: Complete Guide for {audience}"
+    - "How to {action} Like a Pro in {year}"
+    - "How to Set Up {product} for {use_case}"
+    - "How to Get Started with {product} in {year}"
+    - "How to Maximize {benefit} with {product}"
+
+  intro_patterns:
+    - "Want to {action} without {problem}? This comprehensive guide shows you exactly how to do it in {year}."
+    - "Learning how to {action} doesn't have to be complicated. Follow these {number} simple steps to get started."
+    - "Whether you're a {audience} or just getting started, this guide will show you how to {action} effectively."
+    - "In this guide, you'll learn the exact process to {action} and achieve {benefit} for your {use_case}."
+
+comparison:
+  title_patterns:
+    - "{product1} vs {product2}: Which is Better for {use_case}?"
+    - "{product1} vs {product2} vs {product3}: Detailed Comparison"
+    - "{product1} Alternative: Why {product2} is Better"
+    - "Comparing {product1} and {product2} for {use_case}"
+    - "{year} Comparison: {product1} vs {product2}"
+    - "{product1} vs {product2}: Complete Feature Comparison"
+    - "Is {product1} Better Than {product2}? {year} Analysis"
+
+  intro_patterns:
+    - "Choosing between {product1} and {product2} for {use_case}? We've done the research to help you make the right decision."
+    - "Both {product1} and {product2} offer {benefit}, but which one is actually better? Let's break down the key differences."
+    - "If you're looking for a {product1} alternative, {product2} might be exactly what you need. Here's our detailed comparison."
+    - "We've thoroughly tested both {product1} and {product2} to help you understand which solution best fits your needs."
+
+ultimate_guide:
+  title_patterns:
+    - "Ultimate Guide to {topic} ({year} Edition)"
+    - "Everything You Need to Know About {topic}"
+    - "The Complete {topic} Guide for {audience}"
+    - "{topic}: The Definitive Guide"
+    - "Master {topic} in {year}: Complete Guide"
+    - "The {audience} Guide to {topic}"
+    - "{topic} Mastery: From Beginner to Expert"
+
+  intro_patterns:
+    - "This is the most comprehensive guide to {topic} you'll find anywhere. We cover everything from basics to advanced techniques."
+    - "Whether you're new to {topic} or looking to improve your skills, this guide has everything you need."
+    - "Welcome to the ultimate resource for {topic}. We've compiled years of expertise into this single, comprehensive guide."
+    - "In this definitive guide to {topic}, you'll discover proven strategies that {audience} are using to {achieve_goal}."
+
+location_based:
+  title_patterns:
+    - "{service} in {location}: Complete Guide {year}"
+    - "Best {service} Services in {location}"
+    - "{location} {service}: Everything You Need to Know"
+    - "How to Use {service} in {location}"
+    - "{service} for {location} Residents ({year})"
+    - "Top {service} Options in {location} ({year})"
+    - "{location} Guide: Finding the Best {service}"
+
+  intro_patterns:
+    - "Looking for {service} in {location}? This guide covers everything you need to know about getting started in your area."
+    - "Residents of {location} have unique needs when it comes to {service}. Here's what you need to know."
+    - "Whether you're in {location} for business or personal reasons, having access to quality {service} is essential."
+    - "Discover the best {service} options available in {location}, including features, pricing, and local considerations."
+
+crypto_focused:
+  title_patterns:
+    - "Web3 {topic}: {crypto_topic} Guide for {year}"
+    - "Decentralized {service} for {crypto_audience}: Complete Guide"
+    - "How to {crypto_action} with Blockchain Technology"
+    - "{crypto_platform} Integration: Everything You Need"
+    - "Pay with {crypto_payment} for {service} ({year})"
+    - "DeFi Communication: {crypto_topic} Explained"
+
+  intro_patterns:
+    - "In the world of {crypto_topic}, maintaining privacy and security is crucial. Here's how to protect your digital identity."
+    - "For {crypto_audience}, decentralized solutions aren't just convenient - they're essential. This guide shows you how to get started."
+    - "Whether you're involved in {crypto_topic} or building on {crypto_platform}, this guide provides the insights you need."
+
+developer_focused:
+  title_patterns:
+    - "How to Build {dev_feature} with {dev_framework} in {year}"
+    - "{dev_framework} Integration: Developer Guide"
+    - "Building {dev_app_type} with {dev_language}: Complete Tutorial"
+    - "API Implementation: {dev_language} Examples"
+    - "Developer SDK: {dev_platform} Integration"
+    - "Implementing {dev_security} in Your Applications"
+    - "{dev_language} Development: Step-by-Step Guide"
+
+  intro_patterns:
+    - "Looking to integrate {dev_feature} into your {dev_app_type}? This developer guide shows you how to implement it using modern APIs."
+    - "Building secure applications requires the right tools and knowledge. Here's how to implement {dev_feature} in your {dev_platform} app."
+    - "Whether you're building a {dev_app_type} or adding features to existing applications, this guide covers everything developers need to know."

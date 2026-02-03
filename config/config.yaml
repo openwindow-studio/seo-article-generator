@@ -1,0 +1,146 @@
+# SEO Article Generator Configuration
+# Main configuration file
+
+# Brand/Company Information
+brand:
+  name: "Your Company"
+  website: "https://example.com"
+  logo_url: "https://example.com/logo.png"
+  tagline: "Your Tagline Here"
+
+# SEO Settings
+seo:
+  min_word_count: 800
+  max_word_count: 2500
+  keyword_density: 0.02  # 2%
+  meta_description_length: 160
+
+# Generation Settings
+generation:
+  default_count: 10
+  max_parallel_workers: 4
+  output_dir: "generated_articles"
+
+# Template Distribution (must sum to 1.0)
+template_distribution:
+  listicle: 0.30
+  how_to: 0.25
+  comparison: 0.20
+  ultimate_guide: 0.15
+  location_based: 0.10
+
+# Variable Pools for Content Generation
+variable_pools:
+  products:
+    - "Your Product"
+    - "Product Alternative 1"
+    - "Product Alternative 2"
+
+  competitors:
+    - "Competitor A"
+    - "Competitor B"
+    - "Competitor C"
+
+  use_cases:
+    - "business communication"
+    - "remote teams"
+    - "customer service"
+    - "consulting"
+    - "international calls"
+
+  audiences:
+    - "businesses"
+    - "remote workers"
+    - "consultants"
+    - "startups"
+    - "freelancers"
+    - "teams"
+    - "professionals"
+
+  problems:
+    - "complex setup"
+    - "high costs"
+    - "poor quality"
+    - "security concerns"
+    - "limited features"
+
+  goals:
+    - "improve communication"
+    - "reduce costs"
+    - "enhance security"
+    - "increase productivity"
+    - "streamline operations"
+
+  benefits:
+    - "cost-effective"
+    - "easy to use"
+    - "secure"
+    - "reliable"
+    - "feature-rich"
+
+  actions:
+    - "set up secure communication"
+    - "improve team collaboration"
+    - "reduce communication costs"
+    - "enhance call quality"
+
+  topics:
+    - "Business Communication"
+    - "Remote Work Tools"
+    - "Team Collaboration"
+    - "Communication Security"
+
+  locations:
+    - "New York"
+    - "Los Angeles"
+    - "Chicago"
+    - "Houston"
+    - "Phoenix"
+    - "Philadelphia"
+    - "San Antonio"
+    - "San Diego"
+    - "Dallas"
+    - "San Jose"
+    - "London"
+    - "Paris"
+    - "Berlin"
+    - "Madrid"
+    - "Rome"
+    - "Tokyo"
+    - "Singapore"
+    - "Sydney"
+    - "Toronto"
+    - "Dubai"
+
+  services:
+    - "Communication Service"
+    - "Collaboration Platform"
+    - "Voice Solution"
+
+# Content Blocks for Reuse
+content_blocks:
+  conclusions:
+    - "In conclusion, {product} offers a comprehensive solution for {use_case}, providing {benefit} that modern businesses need."
+    - "With these features and benefits, it's clear why {product} is becoming the preferred choice for {audience}."
+    - "The future of {topic} is here, offering {benefit} without compromising on quality or security."
+
+  takeaways:
+    - "{product} delivers unmatched value for {audience}"
+    - "No complex setup or technical knowledge required"
+    - "Cost-effective solution with transparent pricing"
+    - "Enterprise-grade security for all users"
+    - "Works seamlessly across all devices and platforms"
+    - "24/7 customer support available"
+    - "Regular updates and new features"
+
+# Output Formats
+output_formats:
+  - markdown
+  - html
+  - json
+
+# HTML Template Settings
+html:
+  template_path: "templates/html/default.html"
+  include_schema_markup: true
+  include_meta_tags: true
