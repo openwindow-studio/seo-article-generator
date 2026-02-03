@@ -37,15 +37,23 @@ export function ConfigurationForm({ onSubmit, loading = false }: ConfigurationFo
     fetch('/api/config')
       .then(res => res.json())
       .then(data => {
-        setAppConfig(data.config)
+        // Handle the response structure correctly
+        setAppConfig(data)
         setTemplates(data.templates)
 
-        // Update form with loaded config
-        setConfig(prev => ({
-          ...prev,
-          brand: data.config.brand,
-          seo: data.config.seo
-        }))
+        // Update form with loaded config if available
+        if (data.variables) {
+          setConfig(prev => ({
+            ...prev,
+            variables: data.variables,
+            brand: {
+              name: data.variables.brandName || 'SE0',
+              website: 'https://se0.ai',
+              tagline: 'Generate 500+ SEO Articles with One Click'
+            },
+            seo: data.seoSettings || prev.seo
+          }))
+        }
       })
       .catch(console.error)
   }, [])
@@ -66,21 +74,38 @@ export function ConfigurationForm({ onSubmit, loading = false }: ConfigurationFo
   }
 
   const getTemplateOptions = () => {
-    if (!templates) return []
-    return Object.entries(templates).map(([key, template]) => ({
+    // Handle both array and object structures
+    if (!templates && !appConfig?.templates) return []
+
+    const templateData = templates || appConfig?.templates || []
+
+    // If it's an array of template objects
+    if (Array.isArray(templateData)) {
+      return templateData.map(template => ({
+        value: template.id,
+        label: `${template.name} - ${template.description || ''}`
+      }))
+    }
+
+    // If it's an object
+    return Object.entries(templateData).map(([key, template]: [string, any]) => ({
       value: key,
-      label: `${key.replace('_', ' ').toUpperCase()} - ${template.description}`
+      label: `${key.replace(/_/g, ' ').toUpperCase()} - ${template.description || ''}`
     }))
   }
 
   const getVariableFields = () => {
-    if (!templates || !config.templateType || !templates[config.templateType]) return []
-    return templates[config.templateType].variables || []
+    // For now, return common variable fields for all templates
+    return ['products', 'use_cases', 'audiences', 'benefits']
   }
 
   const getVariableOptions = (variableType: string) => {
-    if (!appConfig?.variable_pools?.[variableType]) return []
-    return appConfig.variable_pools[variableType].map(item => ({
+    // Check both possible paths for variables
+    const variables = appConfig?.variable_pools?.[variableType] || appConfig?.variables?.[variableType]
+
+    if (!variables || !Array.isArray(variables)) return []
+
+    return variables.map(item => ({
       value: item,
       label: item
     }))
