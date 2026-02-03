@@ -59,7 +59,7 @@ async function generateZipFile(articles: GeneratedArticle[], filename: string) {
 
   const zipBuffer = await zip.generateAsync({ type: 'nodebuffer' })
 
-  return new Response(zipBuffer, {
+  return new Response(zipBuffer as any, {
     headers: {
       'Content-Type': 'application/zip',
       'Content-Disposition': `attachment; filename="${filename}"`
