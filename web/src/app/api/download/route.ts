@@ -38,7 +38,8 @@ export async function POST(request: NextRequest) {
 }
 
 async function generateZipFile(articles: GeneratedArticle[], filename: string) {
-  const zip = new JSZip()
+  const JSZipConstructor = JSZip.default || JSZip
+  const zip = new JSZipConstructor()
 
   articles.forEach((article, index) => {
     const sanitizedTitle = article.title
