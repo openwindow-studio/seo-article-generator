@@ -44,10 +44,10 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent;
   }
 
   .bg-gradient-primary {
-    @apply bg-gradient-to-r from-primary-600 to-primary-800;
+    @apply bg-gradient-to-r from-blue-600 to-blue-800;
   }
 }
